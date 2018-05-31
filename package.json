@@ -1,0 +1,24 @@
+{
+  "name": "zo-tail-f",
+  "version": "1.0.0",
+  "description": "watch file like tail-f",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zero0-1one/tail-f.git"
+  },
+  "keywords": [
+    "tail-f",
+    "tail",
+    "read line"
+  ],
+  "author": "zero0-1one",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zero0-1one/tail-f/issues"
+  },
+  "homepage": "https://github.com/zero0-1one/tail-f#readme"
+}
