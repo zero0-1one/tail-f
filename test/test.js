@@ -8,8 +8,8 @@ setInterval(() => {
 }, 200)
 
 
-let tailLine = tail.begin('test/test.log')
-let tailChunk = tail.begin('test/test.log', {
+let tailLine = tail.watch('test/test.log')
+let tailChunk = tail.watch('test/test.log', {
   mode: 'chunk'
 })
 
