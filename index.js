@@ -85,10 +85,10 @@ class TailWatch extends EventEmitter {
 }
 
 module.exports = {
-  begin(filename, options = {}) {
+  watch(filename, options = {}) {
     let defOptions = {
       encoding: 'utf8',
-      mode: 'line' // 'stream', 'chunk'
+      mode: 'line' // 'chunk', 'stream'
     }
     return new TailWatch(filename, Object.assign(defOptions, options))
   }
