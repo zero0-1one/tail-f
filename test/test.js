@@ -3,7 +3,13 @@
 const fs = require('fs')
 const tail = require('..')
 
-setInterval(() => {
+let times = 0
+let id = setInterval((e) => {
+  if(times++ == 50){
+    clearInterval(id)
+    console.log('Test Finished ')
+    return
+  }
   fs.appendFileSync('test/test.log', new Date().toLocaleString() + '\n', 'utf8')
 }, 200)
 
