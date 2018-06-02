@@ -21,3 +21,4 @@ watch file like tail -f
 - `options`: 
   - `encoding`:   default: 'utf8'
   - `mode`:   'line' 'chunk' 'stream',   default:'line'  
+  - `interval`: ms,  default: 0 no inspect. Sometimes fs.watch() is delayed too much, For more timely changes, you can set the 'interval' parameter
